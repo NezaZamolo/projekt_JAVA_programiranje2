@@ -1,4 +1,4 @@
-#Flappy Bird - Multi-Level Java Game  
+Flappy Bird - Multi-Level Java Game  
 
 This project is a fully functional multi-level version of the popular Flappy Bird game, built in Java using Swing components.  
 Players can choose between three difficulty modes, each with its own physics and obstacle behavior.
