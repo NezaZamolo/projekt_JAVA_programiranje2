@@ -1,52 +1,78 @@
- # Flappy Bird - Multi-Level Java Game  
+# 🐦 Flappy Bird – Java Project
 
-This project is a fully functional multi-level version of the popular Flappy Bird game, built in Java using Swing components.  
-Players can choose between three difficulty modes, each with its own physics and obstacle behavior.
+Welcome to our remake of the classic **Flappy Bird** game, developed in pure Java. The goal is simple: fly through pipes, avoid obstacles, and collect as many points as possible.
 
-The game features real-time collision detection, dynamic animations, and persistent high score tracking through a simple leaderboard system.
+<img width="512" alt="Screenshot 2025-06-15 at 19 07 40" src="https://github.com/user-attachments/assets/5674178b-a698-468f-99d2-ae4407389922" />
 
-Users interact via a graphical interface, and the application manages game logic, rendering, and data persistence seamlessly.
+## 🎮 Gameplay
 
----
+- Control the bird by pressing `SPACE` to jump.
+- Avoid hitting the pipes or falling to the ground.
+- You start with **3 lives** – losing all ends the game.
+- Three difficulty modes:
+  - 🟢 **Classic Mode** – slow pipes, wide gaps
+  - 🟠 **Hard Mode** – faster pipes, tighter spaces
+  - 🔴 **Extreme Mode** – very fast pipes and tiny gaps
+- Pause with `P` and return to menu with `ESC`.
 
-## Features
+## 💡 Features
 
-- Playable Flappy Bird clone written entirely in Java (no external libraries)
-- Three difficulty levels:
-  - **Classic Mode**: Default speed and pipe gaps
-  - **Hard Mode**: Faster movement and narrower gaps
-  - **Extreme Mode**: Unforgiving challenge with tighter timing
-- Real-time bird physics and collision detection
-- Pipe spawning and scrolling animation
-- Score tracking and persistent leaderboard
-- GUI menu for mode selection and results display
-- Ability to restart the game on game over
-- Simple persistent storage for saving high scores
+- ✅ Three unique game modes
+- ✅ Custom graphics and animations
+- ✅ Sound effects for jump, hit, and scoring
+- ✅ High score saving per mode (`scores.txt`)
+- ✅ Leaderboard with name input
+- ✅ Smooth UI and game restart options
 
----
+## 📂 Project Structure
 
-## Usage
-Once launched, the application displays a menu allowing the player to:
+```
+FlappyBirdProject/
+│
+├── flappybird/              # All game classes
+│   ├── Bird.java
+│   ├── ClassicModePanel.java
+│   ├── ClassicModePipe.java
+│   ├── ExtremeModePanel.java
+│   ├── ExtremeModePipe.java
+│   ├── GameFrame.java
+│   ├── GamePanel.java
+│   ├── HardModePanel.java
+│   ├── HardModePipe.java
+│   ├── LeaderboardPanel.java
+│   ├── Main.java
+│   ├── Pipe.java
+│   ├── ScoreEntry.java
+│   ├── SoundPlayer.java
+│   └── StartPanel.java
+│
+├── media/                   # Images
+│   ├── bird.png
+│   └── heart.png
+│
+├── sounds/                  # Sounds
+│   ├── die.wav
+│   ├── hit.wav
+│   ├── jump.wav
+│   ├── point.wav
+│   └── swoosh.wav
+│
+└── scores.txt               # Stored high scores
+```
 
-Select a game mode (Classic, Hard, Extreme)
+## ▶️ How to Run
 
-Play the game using spacebar to flap the bird
+1. **Requirements:**
+   - Java 17 or later
+   - IntelliJ IDEA / VS Code / any Java IDE
 
-View their current score in real time
+2. **Run Instructions:**
+   - Open the project in your IDE.
+   - Run `Main.java`.
 
-Restart after crashing
+## 👤 Authors
 
-View top scores on the leaderboard
+Developed by:
 
-All high scores are stored in a local file and displayed by mode.
-
----
-
-## Notes
-The game is fully offline and does not require internet access.
-
-Leaderboards are stored locally (as plain text files or Java-serialized objects, depending on implementation).
-
-The game window is resizable but optimized for default screen dimensions.
-
-No external dependencies or libraries are required — everything runs with built-in Java libraries.
+- **Neža Zamolo**  
+- **Žiga Hlastec**
